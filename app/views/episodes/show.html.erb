@@ -2,4 +2,5 @@
 GUESTS: <% @episode.guests do |e_g|%>
 <%= link_to e_g.name, guest_path(e_g) %><br>
 <% end %>
+<%= @episode.avg_rating %>
 
