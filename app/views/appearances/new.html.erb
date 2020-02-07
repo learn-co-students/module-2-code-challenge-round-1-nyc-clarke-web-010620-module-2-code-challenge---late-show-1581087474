@@ -1,0 +1,8 @@
+<h1> Create New Appearances </h1><br>
+<%= form_for @appearance do |f| %>
+    <%= collection_select(@appearance, :guest_id, Guest.all, :id, :name) %>
+    <%= collection_select(@apperance, :episode_id, Episode.all, :id, :date) %> <br>
+     <%= f.label 'Rating' %><br>
+      <%= f.text_field :appearance_rating %><br>
+      <%= f.submit "Submit Appearance" %>
+    <% end %>

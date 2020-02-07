@@ -1,8 +1,6 @@
-<h1>All The Guests</h1>
-
-<ul>
-  <% @guests.each do |guest| %>
+<h1> <%= @episode.date %> </h1><br>
+<% @apperances.each do |episode| %>
     <li><%= link_to guest.name, guest_path(guest) %></li>
     <p><%= guest.occupation %></p>
   <% end %>
-</ul>
+<% end %>
