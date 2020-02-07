@@ -1,0 +1,10 @@
+<h1><%= @guest.name %>'s Show Page </h1>
+
+Occupation: <%= @guest.occupation %><br>
+Episodes: <br>
+<% @guest.appearances.each do |app| %>
+    <li>Date: <%= link_to app.episode.date, app.episode %></li>
+    Rating: <%= app.rating%>
+<% end %>
+
+<%= button_to "create an appearance", new_appearance_path, method: :get%>
