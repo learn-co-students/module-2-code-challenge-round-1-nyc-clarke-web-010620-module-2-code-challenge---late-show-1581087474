@@ -5,17 +5,17 @@ class Appearance < ApplicationRecord
     validate :guest_uniqueness
 
     def guest_uniqueness
-        if compare_appearances.length > 0
+        if compare_appearances.length > 1
             errors.add(:guest, "cannot appear on the same episode twice")
         end
     end
 
     def compare_appearances
         samples = Appearance.all.select do |appearance|
-            self.guest == appearance.guest
+            appearance.guest == self.guest
         end
-        samples.each do |sample|
-            self.episode == sample.episode
+        samples.select do |sample|
+            sample.episode == self.episode
         end
     end
 end
