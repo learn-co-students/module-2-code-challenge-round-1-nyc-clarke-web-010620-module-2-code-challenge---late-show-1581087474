@@ -7,7 +7,8 @@ class GuestsController < ApplicationController
   end
   
   def show
-
+    @appearances = @guest.appearances
+    
   end
 
   private
