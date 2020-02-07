@@ -6,6 +6,5 @@ class EpisodesController < ApplicationController
 
   def show 
     @episode = Episode.find_by(params[:id])
-    byebug
   end
 end
