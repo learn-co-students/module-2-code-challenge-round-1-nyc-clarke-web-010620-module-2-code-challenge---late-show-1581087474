@@ -5,7 +5,7 @@ class Appearance < ApplicationRecord
     validates :rating, numericality: {greater_than: 1}
     validates :rating, numericality: {less_than: 5}
     validates :episode_id, uniqueness: { scope: :guest_id,
-    message: "Guest can only appear on one show" }
+    message: "- Guest can only appear once on an episode." }
 
     def return_guest(id)
         Guest.find(id)

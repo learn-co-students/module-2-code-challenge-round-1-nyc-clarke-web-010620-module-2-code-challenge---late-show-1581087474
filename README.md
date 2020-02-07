@@ -134,7 +134,7 @@ A Guest should only appear on a given Episode once.
 
 ### 9. Advanced: Guest Show Page Appearance Ordering
 
-On the Guest show page, order the Episodes by the Appearance rating so that the highest rated shows first in the list.
+[x] On the Guest show page, order the Episodes by the Appearance rating so that the highest rated shows first in the list.
 
 ### Feature Demo
 

@@ -8,7 +8,8 @@ class GuestsController < ApplicationController
   
   def show
     @appearances = @guest.appearances
-    
+    @appearances = @guest.sort_appearances(@appearances)
+    ## sort 
   end
 
   private
