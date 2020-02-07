@@ -1,9 +1,8 @@
 <h1> <%= @guest.name %> </h1><br>
-<% @guest.episodes.each do |episode| %>
+<% @guest.find_and_sort_appearances.each do |appearance| %>
     <ul>
-    <li><%= link_to episode.date, episode_path(episode) %></li>
-    <% appearance = Appearance.find_by(guest_id: @guest.id, episode_id: episode.id) %><br>
-    <%= "Rating" %> <%= appearance.appearance_rating %>
+    <li><%= link_to a.episode.date, episode_path(a.episode) %></li>
+    <%= "Rating" %> <%= a.appearance_rating %>
     <br>
     </ul>
 <% end %>
