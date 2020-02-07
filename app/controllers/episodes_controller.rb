@@ -8,6 +8,8 @@ class EpisodesController < ApplicationController
 
   def show
     @episodesguests = @episode.guests
+    @average_rating = @episode.average_rating
+
   end
 
   private

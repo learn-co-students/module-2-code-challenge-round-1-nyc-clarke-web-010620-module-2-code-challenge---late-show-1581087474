@@ -130,7 +130,7 @@ A Guest should only appear on a given Episode once.
 
 ### 8. Advanced: Episode Average Rating
 
-On the Episode show page, show the average rating of the Appearances for the episode.
+[x] On the Episode show page, show the average rating of the Appearances for the episode.
 
 ### 9. Advanced: Guest Show Page Appearance Ordering
 

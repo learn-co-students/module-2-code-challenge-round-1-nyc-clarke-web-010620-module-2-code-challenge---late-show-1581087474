@@ -14,4 +14,6 @@ class Appearance < ApplicationRecord
      def return_episode(id)
         Episode.find(id)
     end
+
+    
 end
