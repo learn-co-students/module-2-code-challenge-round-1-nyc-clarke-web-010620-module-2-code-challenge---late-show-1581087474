@@ -1,5 +1,10 @@
 <h1>All Episodes</h1>
 
+<!-- link that makes it easy to make a new appearance joiner -->
+<h5><%= link_to "New Appearance", new_appearance_path%></h5>
+
+<!-- episode index list with links to each episode's show page-->
+
 <ul>
   <% @episodes.each do |episode| %>
     <li><%= link_to "Episode #{episode.number} - #{episode.date.strftime("%B %d, %Y")}", episode%></li>

@@ -6,7 +6,8 @@ class GuestsController < ApplicationController
 
   def show
     @guest = Guest.find(params[:id])
-    @appearances = @guest.appearances
+    #sorts the appearances by best rating. Should this be in the model??
+    @appearances = @guest.appearances.sort_by{|appearance| appearance.rating }.reverse
   end
   
 end

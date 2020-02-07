@@ -1,11 +1,12 @@
 <h1>New Appearance</h1>
-
+<!-- will post an error if one arises -->
 <% if @errors %>
     <% @errors.each do |error| %>
         <p>ERROR: <%= error %></p>
     <% end %>
 <% end %>
 
+<!-- new joiner form with two drop down menues and one number field menu -->
 
 <%= form_for @appearance do |f|%>
 Guest

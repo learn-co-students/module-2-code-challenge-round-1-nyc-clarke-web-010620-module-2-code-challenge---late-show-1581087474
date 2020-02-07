@@ -1,5 +1,8 @@
 <h1>All The Guests</h1>
+<!-- link that makes it easy to make a new appearance joiner -->
+<h5><%= link_to "New Appearance", new_appearance_path%></h5>
 
+<!-- guest index list with links to each guest's show page-->
 <ul>
   <% @guests.each do |guest| %>
     <li><%= link_to guest.name, guest %></li>

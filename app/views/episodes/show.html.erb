@@ -1,10 +1,17 @@
 <h1><%= @episode.number %></h1>
 <p>Date: <%= @episode.date %></p>
+<% if @avg_rating.class == Integer %>
+    <p>Average Episode rating: <%= @avg_rating %></p>
+<% else %>
+    <p>No ratings yet!</p>
+<% end %>
 
+
+        <h3>With guest appearances by: </h3>
 <% if @appearances.length > 0 %>
     <% @appearances.each do |appearance| %>
-        <h3>With guest appearance by: </h3>
         <p> <%= link_to appearance.guest.name, appearance.guest %></p>
-        <p>Episode rating: <%= appearance.rating %></p>
     <%end%>
 <%end%>
+
+<%= link_to "Episodes Index", episodes_path%>
