@@ -5,6 +5,7 @@ class GuestsController < ApplicationController
   end
   def show
     @guest = Guest.find(params[:id])
-    @appearances = @guest.appearances    
+    apps = @guest.appearances.sort_by{|app| app.rating}
+    @appearances = apps.reverse   
   end
 end
