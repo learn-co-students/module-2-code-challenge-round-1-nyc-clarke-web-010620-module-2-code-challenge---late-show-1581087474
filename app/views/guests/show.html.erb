@@ -1,0 +1,27 @@
+<h1> Guest Main Page </h1>
+
+<h2><%= @guest.name %> </h2>
+<h2><%= @guest.occupation %> </h2>
+
+<% @episodes.each do |ep| %>
+
+    <li> <%= ep.number%> <br>
+         <%= link_to ep.date , episode_path(ep) %>
+
+    </li>
+<% end %>
+
+
+<!--  >
+
+<% @sorted.each do |ep| %> 
+
+    <li> <%= ep.rating%> <br>
+         <%= link_to ep.date , ep_path(ep) %>
+
+    </li>
+<% end %>
+
+
+
+

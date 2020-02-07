@@ -68,14 +68,14 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 ### 1. Guest Show Page
 
-There should be a show page for each Guest. It should display the:
+<!-- There should be a show page for each Guest. It should display the:
 
 - Guest's name
 - Guest's occupation
 
-On the Guests index page, clicking on a guest's name should navigate to the show page.
+On the Guests index page, clicking on a guest's name should navigate to the show page. -->
 
-### 2. Appearance Model
+### 2. Appearance Model # !!!!!!!!!!!
 
 To log that a specific Guest appeared on a certain Episode, we need to create the Appearance model. **Make the necessary updates to the schema and models** so that:
 
@@ -83,11 +83,11 @@ To log that a specific Guest appeared on a certain Episode, we need to create th
 - Episode can have multiple guests
 - Appearance stores a numeric rating
 
-### 3. New Appearance Form
+### 3. New Appearance Form # 
 
 A user can fill out a form to create a new Appearance. They can:
 
-- Choose an existing guest from a select dropdown
+- Choose an existing guest from a select dropdown 
 - Choose an existing episode from a select dropdown
 - Enter a numeric rating
 - Submit the form
