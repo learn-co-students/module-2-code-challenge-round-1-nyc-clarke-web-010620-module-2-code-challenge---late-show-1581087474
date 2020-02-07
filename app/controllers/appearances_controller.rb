@@ -1,12 +1,17 @@
 class AppearancesController < ApplicationController
 
-    def news
+    def new
         @appearance = Appearance.new
     end
 
     def create
          @appearance = Appearance.create(appearance_params)
-         redirect_to episodes_path(apperance_params[:episode_id])
+        if @appearance.valid?
+          redirect_to episode_path(appearance_params[:episode_id])
+        else
+          flash[:errors] = @appearance.errors.full_messages.to_sentence 
+          redirect_to new_appearance_path
+        end
     end
 
     private
