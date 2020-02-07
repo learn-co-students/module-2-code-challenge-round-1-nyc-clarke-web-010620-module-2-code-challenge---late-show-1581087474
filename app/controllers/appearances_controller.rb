@@ -9,8 +9,7 @@ class AppearancesController < ApplicationController
         @app = Appearance.new(app_params(:guest_id, :episode_id, :rating))
         if @app.valid?
             @app.save
-            ep_id = @app.episode_id
-            @ep = Episode.find_by(id: ep_id)
+            @ep = @app.episode_id
             redirect_to episode_path(@ep)
         else
             flash[:errors] = @app.errors.full_messages
