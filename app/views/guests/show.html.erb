@@ -1,0 +1,12 @@
+<h1><%= @guest.name %></h1>
+<p>Occupation: <%= @guest.occupation %></p>
+
+<% if @appearances.length > 0 %>
+    <% @appearances.each do |appearance| %>
+        <h3>Appeared in - </h3>
+        <p>Episode number: <%= link_to appearance.episode.number, appearance.episode %></p>
+        <p>Episode date: <%= appearance.episode.date %></p>
+        <p>Episode rating: <%= appearance.rating %></p>
+    <%end%>
+<%end%>
+
