@@ -18,4 +18,9 @@ class Appearance < ApplicationRecord
             sample.episode == self.episode
         end
     end
+
+    def self.order_by_rating
+        self.all.sort_by {|appearance| appearance.rating}.reverse
+    end
+
 end
