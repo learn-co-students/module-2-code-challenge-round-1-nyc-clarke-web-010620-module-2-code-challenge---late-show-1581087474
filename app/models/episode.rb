@@ -8,6 +8,6 @@ class Episode < ApplicationRecord
         end
             
             average = ratings.inject{ |sum, n| sum + n } 
-        
+            # average = average / ratings.count
     end
 end
