@@ -1,0 +1,5 @@
+<h1>@episode.date</h1>
+GUESTS: <% @episode.guests do |e_g|%>
+<%= link_to e_g.name, guest_path(e_g) %><br>
+<% end %>
+
