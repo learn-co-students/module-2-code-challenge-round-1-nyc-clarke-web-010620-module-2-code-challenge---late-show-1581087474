@@ -70,10 +70,10 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 There should be a show page for each Guest. It should display the:
 
-- Guest's name
-- Guest's occupation
+<!-- - Guest's name
+- Guest's occupation -->
 
-On the Guests index page, clicking on a guest's name should navigate to the show page.
+<!-- On the Guests index page, clicking on a guest's name should navigate to the show page. -->
 
 ### 2. Appearance Model
 
@@ -87,37 +87,37 @@ To log that a specific Guest appeared on a certain Episode, we need to create th
 
 A user can fill out a form to create a new Appearance. They can:
 
-- Choose an existing guest from a select dropdown
-- Choose an existing episode from a select dropdown
-- Enter a numeric rating
-- Submit the form
+<!-- - Choose an existing guest from a select dropdown -->
+<!-- - Choose an existing episode from a select dropdown -->
+<!-- - Enter a numeric rating -->
+<!-- - Submit the form -->
 
-After submitting the form, the user should be redirected to the selected episode's show page.
+<!-- After submitting the form, the user should be redirected to the selected episode's show page. -->
 
 ### 4. Episode Show Page
 
 On the episode show page, a user should see:
 
-- Episode date
-- A list of the guests who were on that episode
-- Each guest's name should link to the Guest Show page
+<!-- - Episode date
+- A list of the guests who were on that episode -->
+<!-- - Each guest's name should link to the Guest Show page -->
 
 ### 5. Guest Show Page Episode links
 
-On the Guest show page, add a list of the Episodes the Guest has appeared on.
+<!-- On the Guest show page, add a list of the Episodes the Guest has appeared on. -->
 
 For each Episode, show the:
 
-- date of the Episode
+<!-- - date of the Episode -->
 - rating for the Appearance
 
-Each Episode date should link to the show page for that Episode.
+<!-- Each Episode date should link to the show page for that Episode. -->
 
 ### 6. Appearance Rating Validation
 
 The rating on an Appearance should be between 1 and 5 (inclusive - `1` and `5` are okay).
 
-- Add a validation to ensure that the rating is between 1 and 5.
+<!-- - Add a validation to ensure that the rating is between 1 and 5. -->
 - Add handling for this error to the Appearance create action.
 - The validation error should be shown on the Appearance creation form when a user attempts to save an appearance with an invalid rating.
 
