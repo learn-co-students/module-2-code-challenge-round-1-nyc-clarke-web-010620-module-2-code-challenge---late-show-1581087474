@@ -1,0 +1,21 @@
+<h1><%= @guest.name %>'s Profile</h1>
+<h3>Occupation: <%=@guest.occupation %></h3>
+
+<br>
+<br>
+
+<h2>Apperances:</h2>
+<h4>(sorted by highest rating)</h4>
+<br>
+
+<% @guest.sort_shows_by_rating.each do |app| %>
+<%= link_to "Episode #{app.episode.number} - #{app.episode.date.strftime("%B %d, %Y")}", app.episode %>
+Rating: <%= app.rating %> <br>
+<% end%>
+
+<br>
+<%= button_to "Create new Appearance", new_appearance_path, method: "get" %>
+
+<br>
+<br>
+<%= button_to "See all Guests", guests_path, method: "get" %>
