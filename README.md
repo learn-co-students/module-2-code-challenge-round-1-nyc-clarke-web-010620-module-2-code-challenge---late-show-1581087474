@@ -70,18 +70,18 @@ Update the code of the application to meet the following deliverables. Follow RE
 
 There should be a show page for each Guest. It should display the:
 
-- Guest's name
-- Guest's occupation
+- [x] Guest's name
+- [x] Guest's occupation
 
-On the Guests index page, clicking on a guest's name should navigate to the show page.
+[x] On the Guests index page, clicking on a guest's name should navigate to the show page.
 
 ### 2. Appearance Model
 
 To log that a specific Guest appeared on a certain Episode, we need to create the Appearance model. **Make the necessary updates to the schema and models** so that:
 
-- Guest can appear on many episodes
-- Episode can have multiple guests
-- Appearance stores a numeric rating
+- [x] ]uest can appear on many episodes
+- [x] Episode can have multiple guests
+- [x] Appearance stores a numeric rating
 
 ### 3. New Appearance Form
 
